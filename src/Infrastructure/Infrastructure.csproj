@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net9.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <InternalsVisibleTo Include="Test.UnitTests.Infrastructure" />
+        <InternalsVisibleTo Include="Test.UnitTests.Integration" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="VirusTotalNet" Version="2.2.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Application\Application.csproj" />
+    </ItemGroup>
+
+</Project>
